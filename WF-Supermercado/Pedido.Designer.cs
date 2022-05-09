@@ -42,16 +42,16 @@
             // 
             this.lbxPedido.FormattingEnabled = true;
             this.lbxPedido.ItemHeight = 20;
-            this.lbxPedido.Location = new System.Drawing.Point(39, 83);
+            this.lbxPedido.Location = new System.Drawing.Point(133, 89);
             this.lbxPedido.Name = "lbxPedido";
-            this.lbxPedido.Size = new System.Drawing.Size(373, 324);
+            this.lbxPedido.Size = new System.Drawing.Size(223, 24);
             this.lbxPedido.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(148, 32);
+            this.label4.Location = new System.Drawing.Point(174, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 37);
             this.label4.TabIndex = 6;
@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(500, 98);
+            this.label1.Location = new System.Drawing.Point(74, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(347, 37);
             this.label1.TabIndex = 6;
@@ -71,7 +71,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(528, 184);
+            this.label2.Location = new System.Drawing.Point(103, 216);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 28);
             this.label2.TabIndex = 7;
@@ -80,16 +80,21 @@
             // cbxPagamento
             // 
             this.cbxPagamento.FormattingEnabled = true;
-            this.cbxPagamento.Location = new System.Drawing.Point(649, 184);
+            this.cbxPagamento.Items.AddRange(new object[] {
+            "Dinheiro",
+            "Cartão",
+            "Pix"});
+            this.cbxPagamento.Location = new System.Drawing.Point(232, 220);
             this.cbxPagamento.Name = "cbxPagamento";
             this.cbxPagamento.Size = new System.Drawing.Size(164, 28);
             this.cbxPagamento.TabIndex = 8;
+            this.cbxPagamento.SelectedIndexChanged += new System.EventHandler(this.cbxPagamento_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(558, 264);
+            this.label3.Location = new System.Drawing.Point(133, 270);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 28);
             this.label3.TabIndex = 7;
@@ -98,25 +103,26 @@
             // cbxParcelas
             // 
             this.cbxParcelas.FormattingEnabled = true;
-            this.cbxParcelas.Location = new System.Drawing.Point(649, 268);
+            this.cbxParcelas.Location = new System.Drawing.Point(232, 274);
             this.cbxParcelas.Name = "cbxParcelas";
             this.cbxParcelas.Size = new System.Drawing.Size(94, 28);
             this.cbxParcelas.TabIndex = 8;
             // 
             // btnPagar
             // 
-            this.btnPagar.Location = new System.Drawing.Point(622, 344);
+            this.btnPagar.Location = new System.Drawing.Point(173, 345);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(132, 32);
             this.btnPagar.TabIndex = 9;
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = true;
+            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 519);
+            this.ClientSize = new System.Drawing.Size(491, 445);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.cbxParcelas);
             this.Controls.Add(this.cbxPagamento);
@@ -130,6 +136,7 @@
             this.MinimizeBox = false;
             this.Name = "Pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

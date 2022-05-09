@@ -14,7 +14,6 @@ namespace Wf_Adm.Repository
 
         public void AddCliente(Cliente cliente)
         {
-            ClientesCadastrados();
             Clientes.Add(cliente);
         }
 
@@ -25,12 +24,22 @@ namespace Wf_Adm.Repository
 
         public void ClientesCadastrados()
         {
-            if (Clientes.Count == 0) 
+            if(Clientes.Count == 0)
             {
                 AddCliente(new(2352345, "Maria"));
                 AddCliente(new(2352345, "Joao"));
                 AddCliente(new(2352345, "Valentina"));
             }
+        }
+
+        public Cliente EncontrarCliente(int n)
+        {
+            return Clientes[n];
+        }
+
+        public void Deletar(Cliente c)
+        {
+            Clientes.Remove(c);
         }
 
     }

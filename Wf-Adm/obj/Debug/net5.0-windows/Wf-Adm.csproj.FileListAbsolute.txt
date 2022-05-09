@@ -20,3 +20,6 @@ E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.Propertie
 E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.FormsCliente.FormClienteAdd.resources
 E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.FormProduto.FormProdutoCadastrar.resources
 E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.FormsCliente.FormClienteVisualizar.resources
+E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.FormsCliente.FormClienteDelete.resources
+E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.FormProduto.FormProdutoVisualizar.resources
+E:\ProjetosCast\WF-Supermercado\Wf-Adm\obj\Debug\net5.0-windows\Wf_Adm.FormProduto.FormProdutoDeletar.resources

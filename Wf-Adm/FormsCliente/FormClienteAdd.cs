@@ -20,8 +20,16 @@ namespace Wf_Adm.FormsCliente
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            ClienteRepository cr = new();
-            cr.AddCliente(new(Int64.Parse(txtCpf.Text), txtNome.Text));
+            try
+            {
+                ClienteRepository cr = new();
+                cr.AddCliente(new(Int64.Parse(txtCpf.Text), txtNome.Text));
+                MessageBox.Show("Cliente Cadastrado com sucesso !!");
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

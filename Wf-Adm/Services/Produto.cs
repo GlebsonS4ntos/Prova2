@@ -10,17 +10,25 @@ namespace Wf_Adm.Services
     {
         public int IdProduto { get; set; }
         public string NomeProduto { get; set; }
-        public int quantidade { get; set; }
-        public Produto(int idProduto, string nomeProduto, int quantidade)
+        public int Quantidade { get; set; }
+        public double Valor { get; set; }
+        public Produto(int idProduto, string nomeProduto, int quantidade, double valor)
         {
             IdProduto = idProduto;
             NomeProduto = nomeProduto;
-            this.quantidade = quantidade;
+            Quantidade = quantidade;
+            Valor = valor;
+        }
+        public Produto(string nomeProduto, int quantidade, double valor)
+        {
+            NomeProduto = nomeProduto;
+            Quantidade = quantidade;
+            Valor = valor;
         }
 
         public override string ToString()
         {
-            return NomeProduto;
+            return NomeProduto + " - " + Valor.ToString("F2") +"(Unidade)";
         }
     }
 }

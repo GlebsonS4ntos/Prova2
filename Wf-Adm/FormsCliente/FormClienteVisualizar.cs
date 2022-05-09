@@ -21,6 +21,7 @@ namespace Wf_Adm.FormsCliente
         private void FormClienteVisualizar_Load(object sender, EventArgs e)
         {
             ClienteRepository cr = new();
+            cr.ClientesCadastrados();
             cr.TodosClientes().ForEach(c => lbxClientes.Items.Add(c));
         }
     }

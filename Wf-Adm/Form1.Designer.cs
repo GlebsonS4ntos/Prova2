@@ -33,12 +33,10 @@
             this.menuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClienteAdicionar = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuClienteRemover = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuClienteAtualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuClienteVisualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuProdutosAdicionar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuProdutosRemover = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuProdutosAtualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuProdutosVisualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -62,7 +60,6 @@
             this.menuClientes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuClienteAdicionar,
             this.MenuClienteRemover,
-            this.menuClienteAtualizar,
             this.MenuClienteVisualizar});
             this.menuClientes.Name = "menuClientes";
             this.menuClientes.Size = new System.Drawing.Size(75, 24);
@@ -71,26 +68,21 @@
             // menuClienteAdicionar
             // 
             this.menuClienteAdicionar.Name = "menuClienteAdicionar";
-            this.menuClienteAdicionar.Size = new System.Drawing.Size(224, 26);
+            this.menuClienteAdicionar.Size = new System.Drawing.Size(211, 26);
             this.menuClienteAdicionar.Text = "Adicionar";
             this.menuClienteAdicionar.Click += new System.EventHandler(this.MenuClienteAdicionar_Click);
             // 
             // MenuClienteRemover
             // 
             this.MenuClienteRemover.Name = "MenuClienteRemover";
-            this.MenuClienteRemover.Size = new System.Drawing.Size(224, 26);
+            this.MenuClienteRemover.Size = new System.Drawing.Size(211, 26);
             this.MenuClienteRemover.Text = "Remover";
-            // 
-            // menuClienteAtualizar
-            // 
-            this.menuClienteAtualizar.Name = "menuClienteAtualizar";
-            this.menuClienteAtualizar.Size = new System.Drawing.Size(224, 26);
-            this.menuClienteAtualizar.Text = "Atualizar";
+            this.MenuClienteRemover.Click += new System.EventHandler(this.MenuClienteRemover_Click);
             // 
             // MenuClienteVisualizar
             // 
             this.MenuClienteVisualizar.Name = "MenuClienteVisualizar";
-            this.MenuClienteVisualizar.Size = new System.Drawing.Size(224, 26);
+            this.MenuClienteVisualizar.Size = new System.Drawing.Size(211, 26);
             this.MenuClienteVisualizar.Text = "Visualizar Clientes";
             this.MenuClienteVisualizar.Click += new System.EventHandler(this.MenuClienteVisualizar_Click);
             // 
@@ -99,7 +91,6 @@
             this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuProdutosAdicionar,
             this.menuProdutosRemover,
-            this.menuProdutosAtualizar,
             this.menuProdutosVisualizar});
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
@@ -108,26 +99,23 @@
             // menuProdutosAdicionar
             // 
             this.menuProdutosAdicionar.Name = "menuProdutosAdicionar";
-            this.menuProdutosAdicionar.Size = new System.Drawing.Size(211, 26);
+            this.menuProdutosAdicionar.Size = new System.Drawing.Size(224, 26);
             this.menuProdutosAdicionar.Text = "Adicionar";
+            this.menuProdutosAdicionar.Click += new System.EventHandler(this.menuProdutosAdicionar_Click);
             // 
             // menuProdutosRemover
             // 
             this.menuProdutosRemover.Name = "menuProdutosRemover";
-            this.menuProdutosRemover.Size = new System.Drawing.Size(211, 26);
+            this.menuProdutosRemover.Size = new System.Drawing.Size(224, 26);
             this.menuProdutosRemover.Text = "Remover";
-            // 
-            // menuProdutosAtualizar
-            // 
-            this.menuProdutosAtualizar.Name = "menuProdutosAtualizar";
-            this.menuProdutosAtualizar.Size = new System.Drawing.Size(211, 26);
-            this.menuProdutosAtualizar.Text = "Atualizar";
+            this.menuProdutosRemover.Click += new System.EventHandler(this.menuProdutosRemover_Click);
             // 
             // menuProdutosVisualizar
             // 
             this.menuProdutosVisualizar.Name = "menuProdutosVisualizar";
-            this.menuProdutosVisualizar.Size = new System.Drawing.Size(211, 26);
-            this.menuProdutosVisualizar.Text = "Visualizar Clientes";
+            this.menuProdutosVisualizar.Size = new System.Drawing.Size(224, 26);
+            this.menuProdutosVisualizar.Text = "Visualizar Produto";
+            this.menuProdutosVisualizar.Click += new System.EventHandler(this.menuProdutosVisualizar_Click);
             // 
             // pictureBox1
             // 
@@ -165,13 +153,11 @@
         private System.Windows.Forms.ToolStripMenuItem menuClientes;
         private System.Windows.Forms.ToolStripMenuItem menuClienteAdicionar;
         private System.Windows.Forms.ToolStripMenuItem MenuClienteRemover;
-        private System.Windows.Forms.ToolStripMenuItem menuClienteAtualizar;
         private System.Windows.Forms.ToolStripMenuItem MenuClienteVisualizar;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem menuProdutosAdicionar;
         private System.Windows.Forms.ToolStripMenuItem menuProdutosRemover;
-        private System.Windows.Forms.ToolStripMenuItem menuProdutosAtualizar;
         private System.Windows.Forms.ToolStripMenuItem menuProdutosVisualizar;
     }
 }

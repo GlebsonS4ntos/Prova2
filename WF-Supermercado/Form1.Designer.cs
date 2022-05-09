@@ -49,6 +49,7 @@
             this.btnAdicionarItem.TabIndex = 0;
             this.btnAdicionarItem.Text = "Adicionar";
             this.btnAdicionarItem.UseVisualStyleBackColor = true;
+            this.btnAdicionarItem.Click += new System.EventHandler(this.btnAdicionarItem_Click);
             // 
             // cbxQuantidade
             // 
@@ -65,6 +66,7 @@
             this.cbxProduto.Name = "cbxProduto";
             this.cbxProduto.Size = new System.Drawing.Size(210, 28);
             this.cbxProduto.TabIndex = 1;
+            this.cbxProduto.SelectedIndexChanged += new System.EventHandler(this.cbxProduto_SelectedIndexChanged);
             // 
             // cbxCliente
             // 
@@ -142,6 +144,7 @@
             this.btnEnviarPedido.TabIndex = 5;
             this.btnEnviarPedido.Text = "Enviar";
             this.btnEnviarPedido.UseVisualStyleBackColor = true;
+            this.btnEnviarPedido.Click += new System.EventHandler(this.btnEnviarPedido_Click);
             // 
             // Form1
             // 

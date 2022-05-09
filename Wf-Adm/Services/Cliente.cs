@@ -9,7 +9,7 @@ namespace Wf_Adm.Services
     public class Cliente
     {
         public Int64 Cpf { get; set; }
-        public string Nome { get; set; }
+        public string Nome { get; }
 
         public Cliente(Int64 cpf, string nome)
         {
