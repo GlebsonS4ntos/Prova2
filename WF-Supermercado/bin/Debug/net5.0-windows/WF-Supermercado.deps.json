@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WF-Supermercado/1.0.0": {
+        "dependencies": {
+          "Wf-Adm": "1.0.0"
+        },
+        "runtime": {
+          "WF-Supermercado.dll": {}
+        }
+      },
+      "Wf-Adm/1.0.0": {
+        "runtime": {
+          "Wf-Adm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WF-Supermercado/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Wf-Adm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
