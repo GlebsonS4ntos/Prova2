@@ -10,7 +10,7 @@ namespace Wf_Adm.Repository
     public class ClienteRepository
     {
 
-        public List<Cliente> Clientes = new();
+        public static List<Cliente> Clientes = new();
 
         public void AddCliente(Cliente cliente)
         {
